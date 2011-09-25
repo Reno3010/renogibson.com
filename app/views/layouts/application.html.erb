@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<html dir="ltr" lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Reno Gibson :: IT, Web Development, Ideas, &amp; Life! | <%= @page_title || 'Admin Area' %></title>
+    <meta name="author" content="Reno Gibson">
+    <meta name="viewport" content="width=770" />
+    
+    <%= stylesheet_link_tag('reset', 'renostyle', :media => 'all') %>
+  </head>
+  
+  <body>
+	  
+<div id="wrapper">
+<div id="header">
+
+<h1 id="masthead">
+  
+   <%= image_tag "masthead.gif" %> 
+  
+  </h1>
+  </div>
+  
+  
+
+<div id="maincontent">
+
+
+<div id="main">
+      <% if !flash[:notice].blank? %>
+      <div class="notice">
+        <%= flash[:notice] %>
+      </div>
+      <% end %>
+      <div id="content">
+        <%= yield %>
+      </div>
+    </div>
+
+
+</div>
+<div id="sidebar">
+<p>
+Lorem ipsum dolor sit amet, lacinia viverra malesuada magna ligula vitae ligula, risus sem aenean tincidunt lacus orci. Commodo etiam ut sed scelerisque, ac integer, eu nec suscipit felis, iaculis cursus velit vulputate. Donec vitae arcu in euismod erat, sem donec vehicula, duis magna. Mi bibendum amet, vivamus semper pellentesque, cubilia eleifend. Nibh nec vel vestibulum, amet libero urna ac dignissim vestibulum ac, mattis distinctio, nullam lacus. In lectus omnis, vivamus porttitor, a mi commodo velit, dolor velit, posuere libero eu massa amet non. Sed dui non sed diam vitae, rutrum lobortis luctus primis sociosqu, vel adipiscing bibendum hac, volutpat orci amet egestas metus. Odio dolor tellus sapien, morbi vehicula aptent amet eu donec, hendrerit nunc.
+
+Auctor adipiscing nulla, diam proin vel dignissim molestie, ante sit, ligula sed quam consectetuer. Pretium nunc amet rerum nulla elit a. In a lacinia scelerisque morbi nec consequat, dui posuere adipiscing dictum eu pharetra, nisl bibendum, justo blandit volutpat velit, vitae at eget aenean. Purus luctus, lobortis sed leo sed, pellentesque mauris dapibus sed cum adipiscing, dapibus purus non placerat, nam luctus massa et pellentesque. Et risus, proin egestas viverra nunc amet, pharetra posuere pellentesque, nulla mattis vitae tellus pellentesque porro.
+
+Metus maiores nulla, velit porta fringilla iaculis urna. Erat purus, odio amet vitae est elit egestas. In venenatis elit, pellentesque malesuada nunc. Vestibulum tellus, felis lacinia pede. Justo volutpat urna curabitur consequatur erat. Donec libero pulvinar a nunc, quis velit pede et sed mauris magnis. Wisi molestie, posuere vel porta sed fringilla eaque ut, at wisi ut nec pede, eros ante a ullamcorper sapien. Etiam sollicitudin posuere eros tempora tincidunt ipsum, sed cras in pellentesque arcu consectetuer vestibulum, ullamcorper libero, augue per nam ultrices pharetra laboriosam auctor. Pellentesque et.
+
+Quam fringilla ut neque morbi vestibulum, tellus nonummy aliquet. Leo dignissim massa penatibus mauris, cras arcu sed mattis. Nibh mus mus dolor, integer dui pede wisi. Nam sem quis vestibulum magna, eget sed pulvinar leo sem suspendisse aliquam, ipsum donec. Mollis adipiscing dolor phasellus pellentesque, nunc sed urna tincidunt wisi faucibus omnis, sit consequat volutpat turpis. Modi lectus nibh. Nullam gravida pulvinar sapien auctor, tempor suscipit varius nostra, molestiae lacus neque ultrices. Diam labore ligula tellus eget, mollis malesuada etiam. A sed eros eget velit nec consequat, malesuada orci molestie aliquam ante nunc, orci lectus egestas vel scelerisque.
+
++
+
+
+</p>
+</div>
+
+<div id="footer">
+
+<p id="credits">
+
+<a href="/copyright/">Copyright</a>
+&copy;2011
+<a href="/about/">Reno Gibson</a>
+Atlanta,Ga<br>
+
+<a href="/about/">About</a>
+,
+<a href="/contact/">Contact</a>
+,
+<a href="/desktop/">Desktops</a>
+,
+<a href="/subscribe/">Subscribe (RSS)</a>
+</p>
+</p>
+</div>
+
+
+</div>
+</body>
+
+</html>
